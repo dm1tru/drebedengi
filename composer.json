@@ -5,5 +5,5 @@
   "require": {"php": ">=8.2", "ext-soap": "*", "ext-openssl": "*", "ext-json": "*"},
   "autoload": {"psr-4": {"Drebedengi\\": "src/"}},
   "bin": ["bin/drebedengi.php"],
-  "scripts": {"test": "php tests/run.php"}
+  "scripts": {"test": ["php tests/run.php", "php tests/env.php"]}
 }

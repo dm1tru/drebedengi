@@ -20,7 +20,7 @@ try {
         echo "Usage: php bin/drebedengi.php [--demo] COMMAND [JSON]\n";
         echo "Commands: methods, balance, records, currencies, categories, places, sources, tags, revision\n";
         echo "Raw: call METHOD '[arg1,arg2]' [--write]\n";
-        echo "JSON may be @file.json. Credentials: DREB_API_ID, DREB_LOGIN, DREB_PASSWORD.\n";
+        echo "JSON may be @file.json. Credentials from project .env or environment: DREB_API_ID, DREB_LOGIN, DREB_PASSWORD.\n";
         exit(0);
     }
     if ($command === 'methods') {

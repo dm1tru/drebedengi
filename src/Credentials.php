@@ -14,9 +14,15 @@ final class Credentials
         }
     }
 
-    public static function fromEnvironment(): self
+    /** Process environment takes precedence over the project .env file. */
+    public static function fromEnvironment(?string $envFile = null): self
     {
-        return new self(getenv('DREB_API_ID') ?: '', getenv('DREB_LOGIN') ?: '', getenv('DREB_PASSWORD') ?: '');
+        $values = EnvFile::read($envFile ?? dirname(__DIR__) . '/.env');
+        $read = static function (string $key) use ($values): string {
+            $value = getenv($key);
+            return $value !== false ? $value : ($values[$key] ?? '');
+        };
+        return new self($read('DREB_API_ID'), $read('DREB_LOGIN'), $read('DREB_PASSWORD'));
     }
 
     public static function demo(): self
