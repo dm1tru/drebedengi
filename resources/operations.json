@@ -1,0 +1,91 @@
+{
+  "deleteAll": [],
+  "deleteObject": [
+    "id",
+    "type"
+  ],
+  "getAccessStatus": [],
+  "getAccumList": [
+    "idList"
+  ],
+  "getCheckList": [
+    "idList"
+  ],
+  "getCheckToRecordList": [
+    "idList"
+  ],
+  "getBalance": [
+    "params"
+  ],
+  "getCategoryList": [
+    "idList"
+  ],
+  "getChangeList": [
+    "revision"
+  ],
+  "getCurrencyList": [
+    "idList"
+  ],
+  "getCurrentRevision": [],
+  "getExpireDate": [],
+  "getOrderList": [
+    "idList"
+  ],
+  "getPlaceList": [
+    "idList"
+  ],
+  "getRecordList": [
+    "params",
+    "idList"
+  ],
+  "getRightAccess": [],
+  "getSourceList": [
+    "idList"
+  ],
+  "getSubscriptionStatus": [],
+  "getTagList": [
+    "idList"
+  ],
+  "getUserIdByLogin": [],
+  "parseTextData": [
+    "defPlaceFromId",
+    "defCatId",
+    "defSrcId",
+    "defPlaceToId",
+    "list"
+  ],
+  "parsePushData": [
+    "list"
+  ],
+  "setAccumList": [
+    "list"
+  ],
+  "setCategoryList": [
+    "list"
+  ],
+  "setCurrencyList": [
+    "list"
+  ],
+  "setPaymentTransaction": [
+    "transactionReceipt",
+    "amount"
+  ],
+  "setPlaceList": [
+    "list"
+  ],
+  "setCheckList": [
+    "list"
+  ],
+  "setCheckToRecordList": [
+    "list"
+  ],
+  "setRecordList": [
+    "list"
+  ],
+  "setSourceList": [
+    "list"
+  ],
+  "setTagList": [
+    "list"
+  ]
+}

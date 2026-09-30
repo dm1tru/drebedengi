@@ -1,0 +1,6 @@
+/vendor/
+/.env
+/.env.*
+!/.env.example
+/config.local.php
+/exports/
